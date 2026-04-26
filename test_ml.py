@@ -12,7 +12,7 @@ def test_model_type():
     """
     Tests the model is a LogisticRegression sklearn model.
     """
-    # Your code here
+  
     X = pd.DataFrame({
         "col1": [1, 2, 3, 4, 5],
         "col2": [1, 1, 0, 0, 1]
@@ -30,7 +30,7 @@ def test_metric_types():
     """
     Tests that compute_model_metrics returns float datatypes.
     """
-    # Your code here
+
     y_true = [1, 1, 0, 1, 0]
     y_preds = [0, 1, 1, 0, 0]
 
@@ -47,6 +47,6 @@ def test_inference_labels():
     Tests the string output of the inference label is correct from the 
     numerical input value.
     """
-    # Your code here
+
     assert apply_label([1]) == ">50K"
     assert apply_label([0]) == "<=50K"
